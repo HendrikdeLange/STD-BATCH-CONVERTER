@@ -90,7 +90,7 @@ st.markdown(
         unsafe_allow_html=True,
     )
 
-st.markdown(f"<h2 style='color: orange; font-weight: bold;'>BANK BATCH CONVERTER</h2>", unsafe_allow_html=True)
+st.markdown(f"<h2 style='color: #FFA500 !important;  /* Orange in Hex */ font-weight: bold;'>BANK BATCH CONVERTER</h2>", unsafe_allow_html=True)
 
 
 # File uploader widget for multiple files
