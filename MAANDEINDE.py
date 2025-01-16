@@ -70,7 +70,28 @@ def date_fixer(df):
 path_names = []
 
 # Title for the app
-st.title("STD BATCH CONVERTER")
+st.markdown(
+        """
+        <div style="background-color: #f9f9f9; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            <h3 style="color: #333;">Instructions</h3>
+            <ul>
+                <li>THIS IS THE BANK BATCH CONVERTER for STANDARD BANK.</li>
+                <li>Upload the required files:
+                    <ul>
+                        <li>Upload the files exported from STD BANK, leave them as is.</li>
+                        <li>tip: save all these files to a dedicated exports folder -> CTRL + A(to select all)-> Click Open.</li>
+                    </ul>
+                </li>
+                <li>Click the "Go" button to process the files.</li>
+                <li>Download the processed file using the provided download button.</li>
+            </ul>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+st.markdown(f"<h2 style='color: orange; font-weight: bold;'>BANK BATCH CONVERTER</h2>", unsafe_allow_html=True)
+
 
 # File uploader widget for multiple files
 uploaded_files = st.file_uploader("Upload your files", accept_multiple_files=True)
